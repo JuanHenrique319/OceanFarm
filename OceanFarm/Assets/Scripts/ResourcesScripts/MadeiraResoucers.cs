@@ -57,7 +57,7 @@ public class MadeiraResoucers : MonoBehaviour
             {
                 pendingObj.transform.position = new Vector3(
                 RoundToNearestGrid(pos.x),
-                RoundToNearestGrid(pos.y + 0.51f),
+                RoundToNearestGrid(pos.y + 4.0f),
                 RoundToNearestGrid(pos.z));
                 if (Input.GetMouseButtonDown(1))
                 {

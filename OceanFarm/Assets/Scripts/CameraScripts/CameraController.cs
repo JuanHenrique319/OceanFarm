@@ -21,6 +21,8 @@ public class CameraController : MonoBehaviour
     public Vector3 newPosition;
     public Quaternion newRotation;
     public Vector3 newZoom;
+    public float MinZoom = 4f;
+    public float MaxZoom = 25f;
     // var de mouse
     public Vector3 dragStartPosition;
     public Vector3 dragCurrentPosition;
@@ -37,6 +39,14 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(newZoom.y < MinZoom)
+        {
+            newZoom.y = MinZoom;
+        }
+        if(newZoom.y > MaxZoom)
+        {
+            newZoom.y = MaxZoom;
+        }
         HandleMouseInput();
         HandleMovementInput();
     }
@@ -44,7 +54,7 @@ public class CameraController : MonoBehaviour
     {
         if(Input.mouseScrollDelta.y != 0)
             // dá zoom com base no movimento do scrool
-        {
+        { 
             newZoom += Input.mouseScrollDelta.y * zoomAmount;
         }
         if (Input.GetMouseButtonDown(1))

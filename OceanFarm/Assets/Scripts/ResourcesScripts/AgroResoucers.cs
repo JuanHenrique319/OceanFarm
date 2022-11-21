@@ -83,4 +83,8 @@ public class AgroResoucers : MonoBehaviour
         return pos;
 
     }
+    void OnCollisionStay(Collision other)
+    {
+        print("colidindo");
+    }
 }

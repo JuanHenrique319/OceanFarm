@@ -20,6 +20,7 @@ public class SpawnObj : MonoBehaviour
     private bool gridOn = true;
 
 
+
     private void FixedUpdate()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -107,5 +108,12 @@ public class SpawnObj : MonoBehaviour
     public void RotateObject()
     {
         pendingObj.transform.Rotate(0.0f, rotateAmount, 0.0f, Space.World);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(pendingObj.gameObject.tag != "Build")
+        {
+            print("colidindo");
+        }
     }
 }

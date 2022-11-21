@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Cenario/mapa/OceanFarm.unity
+    path: Assets/Scenes/OceanFarm.unity
     guid: 7fb786e2c1b1d054abd6ffdf41b565be
   m_configObjects: {}

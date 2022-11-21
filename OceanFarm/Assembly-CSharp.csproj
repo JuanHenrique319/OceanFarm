@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\TimeScripts\Calendar.cs" />
     <Compile Include="Assets\Scripts\GridScripts\SpawnObj.cs" />
+    <Compile Include="Assets\Scripts\MenuInfo.cs" />
     <Compile Include="Assets\SimpleGridSystem\MyCell.cs" />
     <Compile Include="Assets\Scripts\ResourcesScripts\MadeiraResoucers.cs" />
     <Compile Include="Assets\Scripts\Events\Conquists.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Assets\Scripts\UiScripts\Remove.cs" />
     <Compile Include="Assets\Scripts\UiScripts\MainMenuSCR.cs" />
     <Compile Include="Assets\Scripts\UiScripts\Edit.cs" />
+    <Compile Include="Assets\Scripts\BuildSO.cs" />
     <Compile Include="Assets\Scripts\ResourcesScripts\FaithResoucers.cs" />
     <Compile Include="Assets\Scripts\ResourcesScripts\AgroResoucers.cs" />
     <Compile Include="Assets\Scripts\ResourcesScripts\ResourceController.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Assets\Scripts\UiScripts\ClickOpen.cs" />
     <Compile Include="Assets\Scripts\TimeScripts\DateMouseOver.cs" />
     <Compile Include="Assets\Scripts\ResourcesScripts\PecResoucers.cs" />
+    <Compile Include="Assets\Scripts\UiScripts\GotoScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
